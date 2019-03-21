@@ -1,0 +1,11 @@
+#
+# Automate compile & run ASM
+#
+#!/bin/bash
+echo -n "Enter flie name : "
+read fname
+as -g -o ${fname}.o ${fname}.s
+ld -o ${fname} ${fname}.o
+rm ${fname}.o
+clear
+./${fname}
