@@ -1,0 +1,30 @@
+#register
+[]r0
+[]r1
+[]r2
+[x]r3
+[x]r4
+[x]r5
+[x]r6
+[]r7
+[x]r8
+[x]r9
+[]r10
+[]r11
+[]r12
+----------------------------
+#global
+r4 -> save file description
+r3 -> count byte
+r2-> count /n
+r1 -> count word
+
+#openFile & counter
+r8 -> seve index file buffer
+
+#couter2asciz & write
+r6 -> pass to convert ascii
+r10 -> pass to write
+
+#checkWord
+return -> true index default| false && index newline+1
